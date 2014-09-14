@@ -1,5 +1,7 @@
 require "mwo/version"
 
-module Mwo
+module MWO
   # Your code goes here...
 end
+
+require "mwo/client"

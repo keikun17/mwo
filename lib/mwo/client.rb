@@ -1,0 +1,2 @@
+class MWO::Client
+end

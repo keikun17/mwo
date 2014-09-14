@@ -2,6 +2,8 @@
 
 Ruby gem for interfacing with Mechwarrior Online's public API
 
+http://mwomercs.com/forums/topic/164685-betatesting-for-our-json-reference-files-the-start-of-the-api-details-within/
+
 ## Installation
 
 Add this line to your application's Gemfile:

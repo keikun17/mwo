@@ -2,8 +2,8 @@ require 'spec_helper'
 
 describe MWO::Client do
 
-  let(:hosto) { 'http://static.mwomercs.com' }
-  subject(:client) { described_class.new(hosto: hosto) }
+  let(:host) { 'http://static.mwomercs.com' }
+  subject(:client) { described_class.new(host: host) }
 
   describe "#items_url" do
     it "returns the url for items api"  do

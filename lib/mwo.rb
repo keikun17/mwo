@@ -1,4 +1,6 @@
 require "mwo/version"
+require 'open-uri'
+require 'json'
 
 module MWO
   # Your code goes here...

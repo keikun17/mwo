@@ -26,28 +26,28 @@ Or install it yourself as:
 
 Get a list of all weapons
 
-[x] MWO::Weapons.all
+- [x] MWO::Weapons.all
 
 Scoped weapons
 
-[ ] MWO::Weapons.ballistic
-[ ] MWO::Weapons.energy
-[ ] MWO::Weapons.missile
+- [ ] MWO::Weapons.ballistic
+- [ ] MWO::Weapons.energy
+- [ ] MWO::Weapons.missile
 
 ### Mechs
 
 #### By Faction
 
-[ ] MWO::Mech.all
-[ ] MWO::Mech.inner_sphere
-[ ] MWO::Mech.clan
+- [ ] MWO::Mech.all
+- [ ] MWO::Mech.inner_sphere
+- [ ] MWO::Mech.clan
 
 #### By Weight class
 
-[ ] MWO::Mech.lights
-[ ] MWO::Mech.mediums
-[ ] MWO::Mech.heavies
-[ ] MWO::Mech.assualts
+- [ ] MWO::Mech.lights
+- [ ] MWO::Mech.mediums
+- [ ] MWO::Mech.heavies
+- [ ] MWO::Mech.assualts
 
 #### Chain em
 
@@ -56,7 +56,7 @@ Scoped weapons
 
 ### Omniparts
 
-[ ] MWO::Omniparts.all
+- [ ] MWO::Omniparts.all
 
 ## Contributing
 

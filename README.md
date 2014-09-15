@@ -26,13 +26,13 @@ Or install it yourself as:
 
 Get a list of all weapons
 
-- [x] MWO::Weapons.all
+- [x] MWO::Weapon.all
 
 Scoped weapons
 
-- [ ] MWO::Weapons.ballistic
-- [ ] MWO::Weapons.energy
-- [ ] MWO::Weapons.missile
+- [ ] MWO::Weapon.ballistic
+- [ ] MWO::Weapon.energy
+- [ ] MWO::Weapon.missile
 
 ### Mechs
 

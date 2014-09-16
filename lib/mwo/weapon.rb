@@ -47,4 +47,8 @@ class MWO::Weapon
   def self.energy
     all.filter({type: 'Energy'})
   end
+
+  def self.ballistic
+    all.filter({type: 'Ballistic'})
+  end
 end

@@ -51,4 +51,8 @@ class MWO::Weapon
   def self.ballistic
     all.filter({type: 'Ballistic'})
   end
+
+  def self.missile
+    all.filter({type: 'Missile'})
+  end
 end

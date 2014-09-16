@@ -1,5 +1,5 @@
 class MWO::Weapon
-  attr_accessor :weapon_id, :name, :type, :num_firing, :damage, :heatpenalty, :heat, :factions
+  attr_accessor :weapon_id, :name, :type, :num_firing, :damage, :heatpenalty, :heat, :inner_sphere, :clan
 
   extend MWO::Utils
 

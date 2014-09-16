@@ -40,7 +40,11 @@ class MWO::Weapon
 
     end
 
-    return weapons
+    return weapons.extend MWO::CollectionUtils
 
+  end
+
+  def self.energy
+    all.filter({type: 'Energy'})
   end
 end

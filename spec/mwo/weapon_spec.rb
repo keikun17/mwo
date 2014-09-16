@@ -11,4 +11,14 @@ describe MWO::Weapon do
       )
     end
   end
+
+  describe ".energy", vcr: {cassette_name: 'all_weapons'} do
+    subject(:energy_weapons) {described_class.energy }
+    it "returns a collection of energy weapons" do
+      expect(energy_weapons).to_not be_empty
+      expect(energy_weapons.all?{|e| e.type == 'Energy'})
+      expect(energy_weapons.collect(&:type)).to_not include('Ballistic', 'Missile')
+    end
+  end
+
 end

@@ -53,4 +53,8 @@ class MWO::Weapon
   def self.missile
     all.filter({type: 'Missile'})
   end
+
+  def self.inner_sphere
+    all.filter({inner_sphere: true})
+  end
 end

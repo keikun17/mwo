@@ -38,4 +38,13 @@ describe MWO::Weapon do
       expect(missile_weapons.collect(&:type)).to_not include('Energy', 'Ballistic')
     end
   end
+
+  describe ".inner_sphere", vcr: {cassette_name: 'all_weapons'} do
+    subject(:inner_sphere_weapons) {described_class.inner_sphere }
+    it "returns a collection of energy weapons" do
+      expect(inner_sphere_weapons).to_not be_empty
+      expect(inner_sphere_weapons).to include(an_object_having_attributes(inner_sphere: true))
+      expect(inner_sphere_weapons).to_not include(an_object_having_attributes(inner_sphere: false))
+    end
+  end
 end

@@ -48,4 +48,13 @@ describe MWO::Weapon do
       expect(inner_sphere_weapons).to_not include(an_object_having_attributes(inner_sphere: false))
     end
   end
+
+  describe ".clan", vcr: {cassette_name: 'all_weapons'} do
+    subject(:clan_weapons) {described_class.clan }
+    it "returns a collection of energy weapons" do
+      expect(clan_weapons).to_not be_empty
+      expect(clan_weapons).to include(an_object_having_attributes(clan: true))
+      expect(clan_weapons).to_not include(an_object_having_attributes(clan: false))
+    end
+  end
 end

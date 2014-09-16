@@ -70,4 +70,8 @@ class MWO::Weapon
   def self.inner_sphere
     all.filter({inner_sphere: true})
   end
+
+  def self.clan
+    all.filter({clan: true})
+  end
 end

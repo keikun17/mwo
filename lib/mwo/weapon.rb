@@ -25,10 +25,8 @@ class MWO::Weapon
                   stats: {}}
 
         if attrs["factions"]
-          weapon[:factions] = {}
-          attrs["factions"].each do |k,v|
-            weapon[:factions][to_symbol(k)] = v
-          end
+          weapon[:clan] = attrs["factions"]["Clan"]
+          weapon[:inner_sphere] = attrs["factions"]["InnerSphere"]
         end
 
         attrs["stats"].each do |k,v|

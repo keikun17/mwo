@@ -30,15 +30,25 @@ Get a list of all weapons
 
 Scoped weapons
 
+### By Category
+
 - [x] MWO::Weapon.ballistic
 - [x] MWO::Weapon.energy
 - [x] MWO::Weapon.missile
 
+### By Faction
+
+- [x] MWO::Weapon.clan
+- [x] MWO::Weapon.innersphere
+
 ### Mechs
+
+List all Mechs
+
+- [ ] MWO::Mech.all
 
 #### By Faction
 
-- [ ] MWO::Mech.all
 - [ ] MWO::Mech.inner_sphere
 - [ ] MWO::Mech.clan
 

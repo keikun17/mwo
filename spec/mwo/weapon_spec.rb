@@ -16,7 +16,7 @@ describe MWO::Weapon do
     subject(:energy_weapons) {described_class.energy }
     it "returns a collection of energy weapons" do
       expect(energy_weapons).to_not be_empty
-      expect(energy_weapons.all?{|e| e.type == 'Energy'})
+      expect(energy_weapons.collect(&:type)).to include('Energy')
       expect(energy_weapons.collect(&:type)).to_not include('Ballistic', 'Missile')
     end
   end
@@ -25,7 +25,7 @@ describe MWO::Weapon do
     subject(:ballistic_weapons) {described_class.ballistic }
     it "returns a collection of energy weapons" do
       expect(ballistic_weapons).to_not be_empty
-      expect(ballistic_weapons.all?{|e| e.type == 'Ballistic'})
+      expect(ballistic_weapons.collect(&:type)).to include('Ballistic')
       expect(ballistic_weapons.collect(&:type)).to_not include('Energy', 'Missile')
     end
   end
@@ -34,8 +34,9 @@ describe MWO::Weapon do
     subject(:missile_weapons) {described_class.missile }
     it "returns a collection of energy weapons" do
       expect(missile_weapons).to_not be_empty
-      expect(missile_weapons.all?{|e| e.type == 'Ballistic'})
-      expect(missile_weapons.collect(&:type)).to_not include('Energy', 'Ballistic')
+      expect(missile_weapons).to include( an_object_having_attributes(type: 'Missile'))
+      expect(missile_weapons).to_not include( an_object_having_attributes(type: 'Ballistic'))
+      expect(missile_weapons).to_not include( an_object_having_attributes(type: 'Energy'))
     end
   end
 

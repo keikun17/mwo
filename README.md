@@ -30,9 +30,9 @@ Get a list of all weapons
 
 Scoped weapons
 
-- [ ] MWO::Weapon.ballistic
-- [ ] MWO::Weapon.energy
-- [ ] MWO::Weapon.missile
+- [x] MWO::Weapon.ballistic
+- [x] MWO::Weapon.energy
+- [x] MWO::Weapon.missile
 
 ### Mechs
 

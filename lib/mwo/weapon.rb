@@ -34,8 +34,8 @@ class MWO::Weapon
 
         weapon = {weapon_id: weapon_id.to_i,
                   name: attrs["name"],
-                  category: attrs["category"],
-                  stats: {}}
+                  category: attrs["category"]
+        }
 
         if attrs["factions"]
           weapon[:clan] = attrs["factions"]["Clan"]

@@ -1,0 +1,120 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://static.mwomercs.com/api/mechs/list/dict.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.1
+      Content-Type:
+      - application/json
+      Strict-Transport-Security:
+      - max-age=0
+      Pragma:
+      - public
+      Access-Control-Allow-Headers:
+      - x-requested-with
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Allow-Methods:
+      - GET
+      Content-Length:
+      - '4128'
+      Cache-Control:
+      - public, must-revalidate, max-age=10
+      Expires:
+      - Wed, 24 Sep 2014 09:15:22 GMT
+      Date:
+      - Wed, 24 Sep 2014 09:15:12 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\n\t\"Mechs\": {\n\t\t\"1\": \"hbk-4g\",\n\t\t\"2\": \"hbk-4p\",\n\t\t\"3\":
+        \"jr7-d\",\n\t\t\"4\": \"jr7-f\",\n\t\t\"5\": \"com-2d\",\n\t\t\"6\": \"com-3a\",\n\t\t\"7\":
+        \"cn9-a\",\n\t\t\"9\": \"hbk-4h\",\n\t\t\"10\": \"drg-1n\",\n\t\t\"11\": \"drg-1c\",\n\t\t\"12\":
+        \"cplt-c1\",\n\t\t\"13\": \"cplt-a1\",\n\t\t\"14\": \"aws-8q\",\n\t\t\"15\":
+        \"aws-8r\",\n\t\t\"16\": \"as7-d\",\n\t\t\"17\": \"as7-d-dc\",\n\t\t\"18\":
+        \"as7-rs\",\n\t\t\"19\": \"cplt-k2\",\n\t\t\"20\": \"jr7-k\",\n\t\t\"21\":
+        \"hbk-4j\",\n\t\t\"22\": \"hbk-4sp\",\n\t\t\"23\": \"drg-5n\",\n\t\t\"24\":
+        \"cplt-c4\",\n\t\t\"25\": \"as7-k\",\n\t\t\"26\": \"com-1b\",\n\t\t\"27\":
+        \"com-1d\",\n\t\t\"28\": \"cn9-al\",\n\t\t\"29\": \"cn9-d\",\n\t\t\"30\":
+        \"aws-8t\",\n\t\t\"31\": \"aws-8v\",\n\t\t\"32\": \"aws-9m\",\n\t\t\"33\":
+        \"rvn-3l\",\n\t\t\"34\": \"rvn-2x\",\n\t\t\"35\": \"rvn-4x\",\n\t\t\"36\":
+        \"cda-3m\",\n\t\t\"37\": \"cda-2a\",\n\t\t\"38\": \"cda-2b\",\n\t\t\"39\":
+        \"cda-3c\",\n\t\t\"40\": \"ctf-3d\",\n\t\t\"41\": \"ctf-1x\",\n\t\t\"42\":
+        \"ctf-2x\",\n\t\t\"44\": \"ctf-4x\",\n\t\t\"45\": \"cn9-ylw\",\n\t\t\"46\":
+        \"stk-5m\",\n\t\t\"47\": \"stk-3f\",\n\t\t\"48\": \"stk-3h\",\n\t\t\"49\":
+        \"stk-4n\",\n\t\t\"50\": \"stk-5s\",\n\t\t\"51\": \"sdr-5v\",\n\t\t\"52\":
+        \"sdr-5d\",\n\t\t\"53\": \"sdr-5k\",\n\t\t\"54\": \"ctf-im\",\n\t\t\"55\":
+        \"drg-fang\",\n\t\t\"56\": \"drg-flame\",\n\t\t\"57\": \"com-tdk\",\n\t\t\"58\":
+        \"aws-pb\",\n\t\t\"59\": \"tbt-7m\",\n\t\t\"60\": \"tbt-3c\",\n\t\t\"61\":
+        \"tbt-5j\",\n\t\t\"62\": \"tbt-5n\",\n\t\t\"63\": \"tbt-7k\",\n\t\t\"64\":
+        \"cda-x5\",\n\t\t\"65\": \"jm6-dd\",\n\t\t\"66\": \"jm6-a\",\n\t\t\"67\":
+        \"jm6-s\",\n\t\t\"69\": \"hgn-hm\",\n\t\t\"70\": \"hgn-732\",\n\t\t\"71\":
+        \"hgn-733\",\n\t\t\"72\": \"hgn-733c\",\n\t\t\"73\": \"hgn-733p\",\n\t\t\"74\":
+        \"drg-5nc\",\n\t\t\"75\": \"stk-m\",\n\t\t\"76\": \"jr7-fc\",\n\t\t\"77\":
+        \"bj-1\",\n\t\t\"78\": \"bj-1dc\",\n\t\t\"79\": \"bj-1x\",\n\t\t\"80\": \"bj-3\",\n\t\t\"81\":
+        \"jm6-fb\",\n\t\t\"82\": \"qkd-4g\",\n\t\t\"83\": \"qkd-4h\",\n\t\t\"84\":
+        \"qkd-5k\",\n\t\t\"85\": \"hbk-4pc\",\n\t\t\"86\": \"jr7-ds\",\n\t\t\"87\":
+        \"vtr-ds\",\n\t\t\"88\": \"vtr-9k\",\n\t\t\"89\": \"vtr-9b\",\n\t\t\"90\":
+        \"vtr-9s\",\n\t\t\"91\": \"cplt-a1c\",\n\t\t\"92\": \"as7-rsc\",\n\t\t\"93\":
+        \"kto-gb\",\n\t\t\"94\": \"kto-20\",\n\t\t\"95\": \"kto-18\",\n\t\t\"96\":
+        \"kto-19\",\n\t\t\"97\": \"on1-p\",\n\t\t\"98\": \"on1-m\",\n\t\t\"99\": \"on1-k\",\n\t\t\"100\":
+        \"on1-v\",\n\t\t\"101\": \"on1-va\",\n\t\t\"102\": \"cn9-ac\",\n\t\t\"103\":
+        \"as7-bh\",\n\t\t\"104\": \"sdr-5kc\",\n\t\t\"105\": \"lct-1vp\",\n\t\t\"106\":
+        \"lct-1v\",\n\t\t\"107\": \"lct-3m\",\n\t\t\"108\": \"lct-3s\",\n\t\t\"109\":
+        \"shd-2hp\",\n\t\t\"110\": \"shd-2h\",\n\t\t\"111\": \"shd-2d2\",\n\t\t\"112\":
+        \"shd-5m\",\n\t\t\"113\": \"tdr-5sp\",\n\t\t\"114\": \"tdr-5s\",\n\t\t\"115\":
+        \"tdr-5ss\",\n\t\t\"116\": \"tdr-9se\",\n\t\t\"117\": \"blr-1gp\",\n\t\t\"118\":
+        \"blr-1g\",\n\t\t\"119\": \"blr-1d\",\n\t\t\"120\": \"blr-1s\",\n\t\t\"121\":
+        \"cplt-j\",\n\t\t\"122\": \"bj-1c\",\n\t\t\"123\": \"jr7-o\",\n\t\t\"124\":
+        \"hgn-733cc\",\n\t\t\"125\": \"grf-1np\",\n\t\t\"126\": \"grf-1n\",\n\t\t\"127\":
+        \"grf-1s\",\n\t\t\"128\": \"grf-3m\",\n\t\t\"134\": \"cda-2ac\",\n\t\t\"133\":
+        \"hbk-gi\",\n\t\t\"135\": \"hbk-gi2\",\n\t\t\"136\": \"stk-3fc\",\n\t\t\"137\":
+        \"fs9-e\",\n\t\t\"138\": \"fs9-s\",\n\t\t\"139\": \"fs9-a\",\n\t\t\"140\":
+        \"fs9-h\",\n\t\t\"141\": \"fs9-k\",\n\t\t\"142\": \"ctf-3dc\",\n\t\t\"143\":
+        \"bnc-lm\",\n\t\t\"144\": \"bnc-3e\",\n\t\t\"145\": \"bnc-3m\",\n\t\t\"146\":
+        \"bnc-3s\",\n\t\t\"147\": \"vtr-9sc\",\n\t\t\"148\": \"rvn-h\",\n\t\t\"149\":
+        \"blr-3m\",\n\t\t\"150\": \"blr-3s\",\n\t\t\"151\": \"lct-1e\",\n\t\t\"152\":
+        \"lct-1m\",\n\t\t\"153\": \"shd-2d\",\n\t\t\"154\": \"shd-2k\",\n\t\t\"155\":
+        \"tdr-9s\",\n\t\t\"156\": \"on1-kc\",\n\t\t\"157\": \"tbt-lg\",\n\t\t\"158\":
+        \"qkd-iv4\",\n\t\t\"159\": \"bj-a\",\n\t\t\"160\": \"fs9-sc\",\n\t\t\"161\":
+        \"shd-2hc\",\n\t\t\"162\": \"tbr-primei\",\n\t\t\"163\": \"tbr-prime\",\n\t\t\"164\":
+        \"tbr-c\",\n\t\t\"165\": \"tbr-s\",\n\t\t\"166\": \"adr-primei\",\n\t\t\"167\":
+        \"adr-prime\",\n\t\t\"168\": \"adr-a\",\n\t\t\"169\": \"adr-d\",\n\t\t\"170\":
+        \"dwf-primei\",\n\t\t\"171\": \"dwf-prime\",\n\t\t\"172\": \"dwf-a\",\n\t\t\"173\":
+        \"dwf-b\",\n\t\t\"174\": \"kfx-primei\",\n\t\t\"175\": \"kfx-prime\",\n\t\t\"176\":
+        \"kfx-d\",\n\t\t\"177\": \"kfx-s\",\n\t\t\"178\": \"nva-primei\",\n\t\t\"179\":
+        \"nva-prime\",\n\t\t\"180\": \"nva-b\",\n\t\t\"181\": \"nva-s\",\n\t\t\"182\":
+        \"scr-primei\",\n\t\t\"183\": \"scr-prime\",\n\t\t\"184\": \"scr-c\",\n\t\t\"185\":
+        \"scr-d\",\n\t\t\"186\": \"smn-primei\",\n\t\t\"187\": \"smn-prime\",\n\t\t\"188\":
+        \"smn-b\",\n\t\t\"189\": \"smn-d\",\n\t\t\"190\": \"whk-primei\",\n\t\t\"191\":
+        \"whk-prime\",\n\t\t\"192\": \"whk-a\",\n\t\t\"193\": \"whk-b\",\n\t\t\"194\":
+        \"tbr-primeg\",\n\t\t\"195\": \"adr-primeg\",\n\t\t\"196\": \"dwf-primeg\",\n\t\t\"197\":
+        \"kfx-primeg\",\n\t\t\"198\": \"nva-primeg\",\n\t\t\"199\": \"scr-primeg\",\n\t\t\"200\":
+        \"smn-primeg\",\n\t\t\"201\": \"whk-primeg\",\n\t\t\"202\": \"kto-18c\",\n\t\t\"203\":
+        \"sdr-a\",\n\t\t\"204\": \"blr-1ghe\",\n\t\t\"205\": \"vnd-1sib\",\n\t\t\"206\":
+        \"vnd-1r\",\n\t\t\"207\": \"vnd-1aa\",\n\t\t\"208\": \"vnd-1x\",\n\t\t\"209\":
+        \"qkd-4gc\",\n\t\t\"210\": \"grf-1e\",\n\t\t\"211\": \"mdd-primei\",\n\t\t\"212\":
+        \"mdd-prime\",\n\t\t\"213\": \"mdd-a\",\n\t\t\"214\": \"mdd-b\",\n\t\t\"996\":
+        \"jr7-d-founder\",\n\t\t\"997\": \"cplt-c1-founder\",\n\t\t\"998\": \"hbk-4g-founder\",\n\t\t\"999\":
+        \"as7-d-founder\",\n\t\t\"129\": \"wvr-6rp\",\n\t\t\"130\": \"wvr-6r\",\n\t\t\"131\":
+        \"wvr-6k\",\n\t\t\"132\": \"wvr-7k\"\n\t}\n}"
+    http_version: 
+  recorded_at: Wed, 24 Sep 2014 09:15:11 GMT
+recorded_with: VCR 2.9.2

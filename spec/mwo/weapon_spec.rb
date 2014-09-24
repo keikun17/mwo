@@ -2,13 +2,19 @@ require 'spec_helper'
 
 describe MWO::Weapon do
 
-  describe ".all" do
+  describe ".all" , vcr: {cassette_name: 'all_weapons'} do
     subject(:weapons) {described_class.all}
-    it "returns a collection of weapons", vcr: {cassette_name: 'all_weapons'} do
+    it "returns a collection of weapons"do
       expect(weapons).to include(
         an_object_having_attributes(weapon_id: 1000, name: "AutoCannon20", type: 'Ballistic', num_firing: 1,  damage: 20, heatpenalty: 24, heat: 6, clan: false, inner_sphere: true),
         an_object_having_attributes(weapon_id: 1241, name: "ClanAutoCannon20", type: 'Ballistic', num_firing: 5, damage: 4, heatpenalty: 30, heat: 6, clan: true, inner_sphere: false)
       )
+    end
+
+    it "returns weapons with unique ids" do
+      a = weapons.collect(&:weapon_id)
+      b = weapons.collect(&:weapon_id).uniq
+      expect(a.count).to eq(b.count)
     end
   end
 

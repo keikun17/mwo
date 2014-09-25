@@ -1,6 +1,7 @@
 class MWO::Client
   ITEMS_PATH     = "/api/items/list/full.json"
   OMNIPARTS_PATH = "/api/omniparts/list/full.json"
+  MECHS_PATH     = "/api/mechs/list/full.json"
   MECH_IDS_PATH  = "/api/mechs/list/dict.json"
 
   attr_accessor :host
@@ -9,7 +10,8 @@ class MWO::Client
     @host = args[:host] || "http://static.mwomercs.com"
   end
 
-  def items
+  def mechs_url
+    host + MECHS_PATH
   end
 
   def items_url

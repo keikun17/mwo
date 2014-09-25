@@ -9,4 +9,5 @@ end
 require 'mwo/client'
 require 'mwo/collection_utils'
 require 'mwo/utils'
+require 'mwo/mech'
 require 'mwo/weapon'

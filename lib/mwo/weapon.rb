@@ -31,7 +31,6 @@ class MWO::Weapon
     raw.each do |weapon_id, attrs|
       if attrs["category"] == "weapon"
 
-
         weapon = {weapon_id: weapon_id.to_i,
                   name: attrs["name"],
                   category: attrs["category"]

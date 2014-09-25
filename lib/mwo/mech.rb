@@ -22,5 +22,6 @@ class MWO::Mech
   def self.dictionary
     client = MWO::Client.new(overrides: {})
     raw = fetch(client.mech_ids_url)
+    raw["Mechs"]
   end
 end

@@ -13,6 +13,7 @@ describe MWO::Mech do
     let (:subject) { described_class.dictionary }
     it "returns json collection" do
       expect(subject).to_not be_empty
+      expect(subject).to include({"1" => "hbk-4g"})
     end
   end
 end

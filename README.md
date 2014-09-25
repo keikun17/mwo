@@ -47,6 +47,10 @@ List all Mechs
 
 - [ ] MWO::Mech.all
 
+##### Lists the Mech ID with their corresponding variants
+
+- [x] MWO::Mech.dictionary # Lists the Mech ID with their corresponding variants
+
 #### By Faction
 
 - [ ] MWO::Mech.inner_sphere

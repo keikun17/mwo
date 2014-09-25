@@ -13,8 +13,19 @@ class MWO::Mech < OpenStruct
 
     mechs = []
     raw["Mechs"].each do |name, attrs|
-      mech = new(attrs)
-      mechs << mech
+
+      # Remove the loadout from the index.
+      attrs.delete('Loadout')
+
+      # Remove the 'class' attribute, it is bugged from the API
+      attrs.delete('Loadout')
+
+      mech = {}
+      attrs.each do |k,v|
+        mech[to_symbol(k)] = v
+      end
+
+      mechs << new(mech)
     end
     mechs
   end

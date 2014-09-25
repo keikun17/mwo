@@ -57,7 +57,7 @@ List all Mechs
 - [ ] MWO::Mech.lights
 - [ ] MWO::Mech.mediums
 - [ ] MWO::Mech.heavies
-- [ ] MWO::Mech.assualts
+- [ ] MWO::Mech.assaults
 
 #### Chain em
 

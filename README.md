@@ -45,7 +45,7 @@ Scoped weapons
 
 List all Mechs
 
-- [ ] MWO::Mech.all
+- [x] MWO::Mech.all
 
 ##### Lists the Mech ID with their corresponding variants
 

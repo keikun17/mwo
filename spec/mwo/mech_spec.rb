@@ -35,6 +35,12 @@ describe MWO::Mech do
       it { is_expected.to include(heavy_mech) }
       it { is_expected.to_not include(light_mech, medium_mech, assault_mech) }
     end
+
+    describe '.assaults' do
+      subject {described_class.assaults}
+      it { is_expected.to include(assault_mech) }
+      it { is_expected.to_not include(light_mech, medium_mech, heavy_mech) }
+    end
   end
 
   describe '.dictionary', vcr: {cassette_name: 'mech_dictionary'} do

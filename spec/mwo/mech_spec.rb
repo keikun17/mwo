@@ -24,6 +24,12 @@ describe MWO::Mech do
       it { is_expected.to_not include(medium_mech, heavy_mech, assault_mech) }
     end
 
+    describe '.mediums' do
+      subject {described_class.mediums}
+      it { is_expected.to include(medium_mech) }
+      it { is_expected.to_not include(light_mech, heavy_mech, assault_mech) }
+    end
+
     # describe '.medium', vcr: {cassette_name: 'all_mechs'} do
     #   it "returns a collection of Medium mechs" do
     #   end

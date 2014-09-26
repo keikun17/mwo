@@ -51,6 +51,10 @@ class MWO::Mech < OpenStruct
     all.filter({weight_class: 'Light'})
   end
 
+  def self.mediums
+    all.filter({weight_class: 'Medium'})
+  end
+
   def self.dictionary
     client = MWO::Client.new(overrides: {})
     raw = fetch(client.mech_ids_url)

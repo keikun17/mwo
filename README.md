@@ -58,15 +58,10 @@ List all Mechs
 
 #### By Weight class
 
-- [ ] MWO::Mech.lights
-- [ ] MWO::Mech.mediums
-- [ ] MWO::Mech.heavies
-- [ ] MWO::Mech.assaults
-
-#### Chain em
-
-    MWO::Mech.clan.lights
-    MWO::Mech.inner_sphere.assaults
+- [x] MWO::Mech.lights
+- [x] MWO::Mech.mediums
+- [x] MWO::Mech.heavies
+- [x] MWO::Mech.assaults
 
 ### Omniparts
 

@@ -12,6 +12,34 @@ describe MWO::Mech do
     end
   end
 
+  describe 'Weight class scoping', vcr: {cassette_name: 'all_mechs'} do
+    let(:light_mech) {an_object_having_attributes(weight_class: 'Light')}
+    let(:medium_mech) {an_object_having_attributes(weight_class: 'Medium')}
+    let(:heavy_mech) {an_object_having_attributes(weight_class: 'Heavy')}
+    let(:assault_mech) {an_object_having_attributes(weight_class: 'Assault')}
+
+    describe '.light' do
+      subject {described_class.lights}
+      it { is_expected.to include(light_mech) }
+      it { is_expected.to_not include(medium_mech, heavy_mech, assault_mech) }
+    end
+
+    # describe '.medium', vcr: {cassette_name: 'all_mechs'} do
+    #   it "returns a collection of Medium mechs" do
+    #   end
+    # end
+    #
+    # describe '.heavy', vcr: {cassette_name: 'all_mechs'} do
+    #   it "returns a collection of Heavy Mechs" do
+    #   end
+    # end
+    #
+    # describe '.assault', vcr: {cassette_name: 'all_mechs'} do
+    #   it "returns a collection of Assault Mechs" do
+    #   end
+    # end
+  end
+
   describe '.dictionary', vcr: {cassette_name: 'mech_dictionary'} do
     let (:subject) { described_class.dictionary }
     it "returns json collection" do

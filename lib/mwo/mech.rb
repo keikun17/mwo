@@ -40,9 +40,15 @@ class MWO::Mech < OpenStruct
         mech[to_symbol(k)] = v
       end
 
+      # set override the invalid classification
       mechs << new(mech)
     end
-    mechs
+
+    return mechs.extend MWO::CollectionUtils
+  end
+
+  def self.lights
+    all.filter({weight_class: 'Light'})
   end
 
   def self.dictionary

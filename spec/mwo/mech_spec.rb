@@ -30,20 +30,11 @@ describe MWO::Mech do
       it { is_expected.to_not include(light_mech, heavy_mech, assault_mech) }
     end
 
-    # describe '.medium', vcr: {cassette_name: 'all_mechs'} do
-    #   it "returns a collection of Medium mechs" do
-    #   end
-    # end
-    #
-    # describe '.heavy', vcr: {cassette_name: 'all_mechs'} do
-    #   it "returns a collection of Heavy Mechs" do
-    #   end
-    # end
-    #
-    # describe '.assault', vcr: {cassette_name: 'all_mechs'} do
-    #   it "returns a collection of Assault Mechs" do
-    #   end
-    # end
+    describe '.heavies' do
+      subject {described_class.heavies}
+      it { is_expected.to include(heavy_mech) }
+      it { is_expected.to_not include(light_mech, medium_mech, assault_mech) }
+    end
   end
 
   describe '.dictionary', vcr: {cassette_name: 'mech_dictionary'} do

@@ -17,6 +17,21 @@ class MWO::Mech < OpenStruct
       # Remove the loadout from the index.
       attrs.delete('Loadout')
 
+      # The mech classification value is broken in the API
+      attrs.delete('Class')
+      attrs["WeightClass"] = case attrs['MaxTons']
+      when 0..35
+        'Light'
+      when 36..55
+        'Medium'
+      when 56..75
+        'Heavy'
+      when 76..100
+        'Assault'
+      when 101.300
+        'Experimental'
+      end
+
       # Remove the 'class' attribute, it is bugged from the API
       attrs.delete('Loadout')
 

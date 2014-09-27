@@ -22,13 +22,15 @@ class MWO::Weapon
     end
   end
 
-  def self.all(overrides: {})
+  def self.all_raw(overrides: {})
     client = MWO::Client.new(overrides: {})
     raw = fetch(client.items_url)
+  end
 
+  def self.all(overrides: {})
     weapons = []
 
-    raw.each do |weapon_id, attrs|
+    all_raw.each do |weapon_id, attrs|
       if attrs["category"] == "weapon"
 
         weapon = {weapon_id: weapon_id.to_i,

@@ -3,6 +3,12 @@ require 'spec_helper'
 describe MWO::Weapon do
 
   describe ".all" , vcr: {cassette_name: 'all_weapons'} do
+    it "returns json data" do
+      expect(described_class.all_raw).to_not be_empty
+    end
+  end
+
+  describe ".all" , vcr: {cassette_name: 'all_weapons'} do
     subject(:weapons) {described_class.all}
     it "returns a collection of weapons"do
       expect(weapons).to include(

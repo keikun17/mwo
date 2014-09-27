@@ -27,6 +27,7 @@ Or install it yourself as:
 Get a list of all weapons
 
 - [x] MWO::Weapon.all
+- [x] MWO::Weapon.all_raw # if you want the json response from the api
 
 Scoped weapons
 
@@ -46,6 +47,7 @@ Scoped weapons
 List all Mechs
 
 - [x] MWO::Mech.all
+- [x] MWO::Mech.all_raw # if you want the json response from the api
 
 ##### Lists the Mech ID with their corresponding variants
 

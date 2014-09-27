@@ -1,12 +1,15 @@
 class MWO::Mech < OpenStruct
   extend MWO::Utils
 
-  def self.all
+  def self.all_raw(overrides: {})
     client = MWO::Client.new(overrides: {})
-    raw = fetch(client.mechs_url)
+    fetch(client.mechs_url)
+  end
+
+  def self.all
 
     mechs = []
-    raw["Mechs"].each do |name, attrs|
+    all_raw["Mechs"].each do |name, attrs|
 
       # Remove the loadout from the index.
       attrs.delete('Loadout')

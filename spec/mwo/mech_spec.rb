@@ -1,6 +1,13 @@
 require 'spec_helper'
 
 describe MWO::Mech do
+
+  describe ".all" , vcr: {cassette_name: 'all_mechs'} do
+    it "returns json data" do
+      expect(described_class.all_raw).to_not be_empty
+    end
+  end
+
   describe '.all', vcr: {cassette_name: 'all_mechs'} do
     let (:subject) { described_class.all }
     let (:hbk4g) { an_object_having_attributes(name: 'hbk-4g', max_armor: 338, mech_id: 1, total_tons: 50, weight_class: 'Medium') }

@@ -53,21 +53,12 @@ List all Mechs
 
 - [x] MWO::Mech.dictionary # Lists the Mech ID with their corresponding variants
 
-#### By Faction
-
-- [ ] MWO::Mech.inner_sphere
-- [ ] MWO::Mech.clan
-
 #### By Weight class
 
 - [x] MWO::Mech.lights
 - [x] MWO::Mech.mediums
 - [x] MWO::Mech.heavies
 - [x] MWO::Mech.assaults
-
-### Omniparts
-
-- [ ] MWO::Omniparts.all
 
 ## Contributing
 

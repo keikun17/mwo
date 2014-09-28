@@ -26,39 +26,51 @@ Or install it yourself as:
 
 Get a list of all weapons
 
-- [x] MWO::Weapon.all
-- [x] MWO::Weapon.all_raw # if you want the json response from the api
+```ruby
+MWO::Weapon.all
+MWO::Weapon.all_raw # if you want the json response from the api
+```
 
 Scoped weapons
 
 ### By Category
 
-- [x] MWO::Weapon.ballistic
-- [x] MWO::Weapon.energy
-- [x] MWO::Weapon.missile
+```ruby
+MWO::Weapon.ballistic
+MWO::Weapon.energy
+MWO::Weapon.missile
+```
 
 ### By Faction
 
-- [x] MWO::Weapon.clan
-- [x] MWO::Weapon.innersphere
+```ruby
+MWO::Weapon.clan
+MWO::Weapon.innersphere
+```
 
 ### Mechs
 
 List all Mechs
 
-- [x] MWO::Mech.all
-- [x] MWO::Mech.all_raw # if you want the json response from the api
+```ruby
+MWO::Mech.all
+MWO::Mech.all_raw # if you want the json response from the api
+```
 
 ##### Lists the Mech ID with their corresponding variants
 
-- [x] MWO::Mech.dictionary # Lists the Mech ID with their corresponding variants
+```ruby
+MWO::Mech.dictionary # Lists the Mech ID with their corresponding variants
+```
 
 #### By Weight class
 
-- [x] MWO::Mech.lights
-- [x] MWO::Mech.mediums
-- [x] MWO::Mech.heavies
-- [x] MWO::Mech.assaults
+```ruby
+MWO::Mech.lights
+MWO::Mech.mediums
+MWO::Mech.heavies
+MWO::Mech.assaults
+```
 
 ## Contributing
 

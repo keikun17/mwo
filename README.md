@@ -79,3 +79,14 @@ MWO::Mech.assaults
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+### Author
+
+Florante "Buddy" Magsipoc
+
+[@keikun17](https://www.twitter.com/keikun17)
+
+
+### License
+
+Licensed under the MIT license (see MIT-LICENSE file)

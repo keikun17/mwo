@@ -10,7 +10,7 @@ http_interactions:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Server:
-      - nginx/1.6.1
+      - nginx/1.6.2
       Content-Type:
       - application/json
       Strict-Transport-Security:
@@ -29,43 +29,43 @@ http_interactions:
       Access-Control-Allow-Headers:
       - x-requested-with
       Access-Control-Allow-Origin:
-      - '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET
-      Content-Length:
-      - '4128'
       Cache-Control:
       - public, must-revalidate, max-age=10
       Expires:
-      - Wed, 24 Sep 2014 09:15:22 GMT
+      - Mon, 17 Nov 2014 06:10:42 GMT
       Date:
-      - Wed, 24 Sep 2014 09:15:12 GMT
+      - Mon, 17 Nov 2014 06:10:32 GMT
+      Content-Length:
+      - '4285'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: "{\n\t\"Mechs\": {\n\t\t\"1\": \"hbk-4g\",\n\t\t\"2\": \"hbk-4p\",\n\t\t\"3\":
         \"jr7-d\",\n\t\t\"4\": \"jr7-f\",\n\t\t\"5\": \"com-2d\",\n\t\t\"6\": \"com-3a\",\n\t\t\"7\":
-        \"cn9-a\",\n\t\t\"9\": \"hbk-4h\",\n\t\t\"10\": \"drg-1n\",\n\t\t\"11\": \"drg-1c\",\n\t\t\"12\":
-        \"cplt-c1\",\n\t\t\"13\": \"cplt-a1\",\n\t\t\"14\": \"aws-8q\",\n\t\t\"15\":
-        \"aws-8r\",\n\t\t\"16\": \"as7-d\",\n\t\t\"17\": \"as7-d-dc\",\n\t\t\"18\":
-        \"as7-rs\",\n\t\t\"19\": \"cplt-k2\",\n\t\t\"20\": \"jr7-k\",\n\t\t\"21\":
-        \"hbk-4j\",\n\t\t\"22\": \"hbk-4sp\",\n\t\t\"23\": \"drg-5n\",\n\t\t\"24\":
-        \"cplt-c4\",\n\t\t\"25\": \"as7-k\",\n\t\t\"26\": \"com-1b\",\n\t\t\"27\":
-        \"com-1d\",\n\t\t\"28\": \"cn9-al\",\n\t\t\"29\": \"cn9-d\",\n\t\t\"30\":
-        \"aws-8t\",\n\t\t\"31\": \"aws-8v\",\n\t\t\"32\": \"aws-9m\",\n\t\t\"33\":
-        \"rvn-3l\",\n\t\t\"34\": \"rvn-2x\",\n\t\t\"35\": \"rvn-4x\",\n\t\t\"36\":
-        \"cda-3m\",\n\t\t\"37\": \"cda-2a\",\n\t\t\"38\": \"cda-2b\",\n\t\t\"39\":
-        \"cda-3c\",\n\t\t\"40\": \"ctf-3d\",\n\t\t\"41\": \"ctf-1x\",\n\t\t\"42\":
-        \"ctf-2x\",\n\t\t\"44\": \"ctf-4x\",\n\t\t\"45\": \"cn9-ylw\",\n\t\t\"46\":
-        \"stk-5m\",\n\t\t\"47\": \"stk-3f\",\n\t\t\"48\": \"stk-3h\",\n\t\t\"49\":
-        \"stk-4n\",\n\t\t\"50\": \"stk-5s\",\n\t\t\"51\": \"sdr-5v\",\n\t\t\"52\":
-        \"sdr-5d\",\n\t\t\"53\": \"sdr-5k\",\n\t\t\"54\": \"ctf-im\",\n\t\t\"55\":
-        \"drg-fang\",\n\t\t\"56\": \"drg-flame\",\n\t\t\"57\": \"com-tdk\",\n\t\t\"58\":
-        \"aws-pb\",\n\t\t\"59\": \"tbt-7m\",\n\t\t\"60\": \"tbt-3c\",\n\t\t\"61\":
-        \"tbt-5j\",\n\t\t\"62\": \"tbt-5n\",\n\t\t\"63\": \"tbt-7k\",\n\t\t\"64\":
-        \"cda-x5\",\n\t\t\"65\": \"jm6-dd\",\n\t\t\"66\": \"jm6-a\",\n\t\t\"67\":
-        \"jm6-s\",\n\t\t\"69\": \"hgn-hm\",\n\t\t\"70\": \"hgn-732\",\n\t\t\"71\":
+        \"cn9-a\",\n\t\t\"8\": \"cn9-ah\",\n\t\t\"9\": \"hbk-4h\",\n\t\t\"10\": \"drg-1n\",\n\t\t\"11\":
+        \"drg-1c\",\n\t\t\"12\": \"cplt-c1\",\n\t\t\"13\": \"cplt-a1\",\n\t\t\"14\":
+        \"aws-8q\",\n\t\t\"15\": \"aws-8r\",\n\t\t\"16\": \"as7-d\",\n\t\t\"17\":
+        \"as7-d-dc\",\n\t\t\"18\": \"as7-rs\",\n\t\t\"19\": \"cplt-k2\",\n\t\t\"20\":
+        \"jr7-k\",\n\t\t\"21\": \"hbk-4j\",\n\t\t\"22\": \"hbk-4sp\",\n\t\t\"23\":
+        \"drg-5n\",\n\t\t\"24\": \"cplt-c4\",\n\t\t\"25\": \"as7-k\",\n\t\t\"26\":
+        \"com-1b\",\n\t\t\"27\": \"com-1d\",\n\t\t\"28\": \"cn9-al\",\n\t\t\"29\":
+        \"cn9-d\",\n\t\t\"30\": \"aws-8t\",\n\t\t\"31\": \"aws-8v\",\n\t\t\"32\":
+        \"aws-9m\",\n\t\t\"33\": \"rvn-3l\",\n\t\t\"34\": \"rvn-2x\",\n\t\t\"35\":
+        \"rvn-4x\",\n\t\t\"36\": \"cda-3m\",\n\t\t\"37\": \"cda-2a\",\n\t\t\"38\":
+        \"cda-2b\",\n\t\t\"39\": \"cda-3c\",\n\t\t\"40\": \"ctf-3d\",\n\t\t\"41\":
+        \"ctf-1x\",\n\t\t\"42\": \"ctf-2x\",\n\t\t\"44\": \"ctf-4x\",\n\t\t\"45\":
+        \"cn9-ylw\",\n\t\t\"46\": \"stk-5m\",\n\t\t\"47\": \"stk-3f\",\n\t\t\"48\":
+        \"stk-3h\",\n\t\t\"49\": \"stk-4n\",\n\t\t\"50\": \"stk-5s\",\n\t\t\"51\":
+        \"sdr-5v\",\n\t\t\"52\": \"sdr-5d\",\n\t\t\"53\": \"sdr-5k\",\n\t\t\"54\":
+        \"ctf-im\",\n\t\t\"55\": \"drg-fang\",\n\t\t\"56\": \"drg-flame\",\n\t\t\"57\":
+        \"com-tdk\",\n\t\t\"58\": \"aws-pb\",\n\t\t\"59\": \"tbt-7m\",\n\t\t\"60\":
+        \"tbt-3c\",\n\t\t\"61\": \"tbt-5j\",\n\t\t\"62\": \"tbt-5n\",\n\t\t\"63\":
+        \"tbt-7k\",\n\t\t\"64\": \"cda-x5\",\n\t\t\"65\": \"jm6-dd\",\n\t\t\"66\":
+        \"jm6-a\",\n\t\t\"67\": \"jm6-s\",\n\t\t\"69\": \"hgn-hm\",\n\t\t\"70\": \"hgn-732\",\n\t\t\"71\":
         \"hgn-733\",\n\t\t\"72\": \"hgn-733c\",\n\t\t\"73\": \"hgn-733p\",\n\t\t\"74\":
         \"drg-5nc\",\n\t\t\"75\": \"stk-m\",\n\t\t\"76\": \"jr7-fc\",\n\t\t\"77\":
         \"bj-1\",\n\t\t\"78\": \"bj-1dc\",\n\t\t\"79\": \"bj-1x\",\n\t\t\"80\": \"bj-3\",\n\t\t\"81\":
@@ -111,10 +111,12 @@ http_interactions:
         \"sdr-a\",\n\t\t\"204\": \"blr-1ghe\",\n\t\t\"205\": \"vnd-1sib\",\n\t\t\"206\":
         \"vnd-1r\",\n\t\t\"207\": \"vnd-1aa\",\n\t\t\"208\": \"vnd-1x\",\n\t\t\"209\":
         \"qkd-4gc\",\n\t\t\"210\": \"grf-1e\",\n\t\t\"211\": \"mdd-primei\",\n\t\t\"212\":
-        \"mdd-prime\",\n\t\t\"213\": \"mdd-a\",\n\t\t\"214\": \"mdd-b\",\n\t\t\"996\":
-        \"jr7-d-founder\",\n\t\t\"997\": \"cplt-c1-founder\",\n\t\t\"998\": \"hbk-4g-founder\",\n\t\t\"999\":
-        \"as7-d-founder\",\n\t\t\"129\": \"wvr-6rp\",\n\t\t\"130\": \"wvr-6r\",\n\t\t\"131\":
-        \"wvr-6k\",\n\t\t\"132\": \"wvr-7k\"\n\t}\n}"
+        \"mdd-prime\",\n\t\t\"213\": \"mdd-a\",\n\t\t\"214\": \"mdd-b\",\n\t\t\"215\":
+        \"tbt-7mc\",\n\t\t\"216\": \"as7-s\",\n\t\t\"217\": \"tdr-9sec\",\n\t\t\"218\":
+        \"ifr-primei\",\n\t\t\"219\": \"ifr-prime\",\n\t\t\"220\": \"ifr-a\",\n\t\t\"221\":
+        \"ifr-c\",\n\t\t\"996\": \"jr7-d-founder\",\n\t\t\"997\": \"cplt-c1-founder\",\n\t\t\"998\":
+        \"hbk-4g-founder\",\n\t\t\"999\": \"as7-d-founder\",\n\t\t\"129\": \"wvr-6rp\",\n\t\t\"130\":
+        \"wvr-6r\",\n\t\t\"131\": \"wvr-6k\",\n\t\t\"132\": \"wvr-7k\"\n\t}\n}"
     http_version: 
-  recorded_at: Wed, 24 Sep 2014 09:15:11 GMT
+  recorded_at: Mon, 17 Nov 2014 06:10:33 GMT
 recorded_with: VCR 2.9.2

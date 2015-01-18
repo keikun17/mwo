@@ -26,22 +26,31 @@ http_interactions:
       - max-age=0
       Pragma:
       - public
-      Access-Control-Allow-Headers:
-      - x-requested-with
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET
       Cache-Control:
       - public, must-revalidate, max-age=10
       Expires:
-      - Mon, 17 Nov 2014 06:10:42 GMT
+      - Sun, 18 Jan 2015 14:21:25 GMT
       Date:
-      - Mon, 17 Nov 2014 06:10:32 GMT
+      - Sun, 18 Jan 2015 14:21:15 GMT
       Content-Length:
-      - '4285'
+      - '4669'
       Connection:
       - keep-alive
+      Set-Cookie:
+      - PHPSESSID=t0dv8npeagui8nb9gfvkpv2a81; expires=Mon, 19-Jan-2015 14:21:15 GMT;
+        Max-Age=86400; path=/; domain=.mwomercs.com; HttpOnly
+      - hl=en_us; expires=Mon, 18-Jan-2016 14:21:15 GMT; Max-Age=31536000; path=/;
+        domain=.mwomercs.com
+      Access-Control-Max-Age:
+      - '86400'
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - http://mwomercs.com https://mwomercs.com https://tools.mwomercs.com
     body:
       encoding: UTF-8
       string: "{\n\t\"Mechs\": {\n\t\t\"1\": \"hbk-4g\",\n\t\t\"2\": \"hbk-4p\",\n\t\t\"3\":
@@ -114,9 +123,16 @@ http_interactions:
         \"mdd-prime\",\n\t\t\"213\": \"mdd-a\",\n\t\t\"214\": \"mdd-b\",\n\t\t\"215\":
         \"tbt-7mc\",\n\t\t\"216\": \"as7-s\",\n\t\t\"217\": \"tdr-9sec\",\n\t\t\"218\":
         \"ifr-primei\",\n\t\t\"219\": \"ifr-prime\",\n\t\t\"220\": \"ifr-a\",\n\t\t\"221\":
-        \"ifr-c\",\n\t\t\"996\": \"jr7-d-founder\",\n\t\t\"997\": \"cplt-c1-founder\",\n\t\t\"998\":
-        \"hbk-4g-founder\",\n\t\t\"999\": \"as7-d-founder\",\n\t\t\"129\": \"wvr-6rp\",\n\t\t\"130\":
-        \"wvr-6r\",\n\t\t\"131\": \"wvr-6k\",\n\t\t\"132\": \"wvr-7k\"\n\t}\n}"
+        \"ifr-c\",\n\t\t\"222\": \"lct-pb\",\n\t\t\"223\": \"shd-gd\",\n\t\t\"224\":
+        \"mlx-primei\",\n\t\t\"225\": \"mlx-prime\",\n\t\t\"226\": \"mlx-b\",\n\t\t\"227\":
+        \"mlx-c\",\n\t\t\"228\": \"rvn-3lc\",\n\t\t\"229\": \"hbr-primei\",\n\t\t\"230\":
+        \"hbr-prime\",\n\t\t\"231\": \"hbr-a\",\n\t\t\"232\": \"hbr-b\",\n\t\t\"233\":
+        \"gar-primei\",\n\t\t\"234\": \"gar-prime\",\n\t\t\"235\": \"gar-a\",\n\t\t\"236\":
+        \"gar-d\",\n\t\t\"237\": \"kgc-000l\",\n\t\t\"238\": \"kgc-000\",\n\t\t\"239\":
+        \"kgc-0000\",\n\t\t\"240\": \"kgc-000b\",\n\t\t\"996\": \"jr7-d-founder\",\n\t\t\"997\":
+        \"cplt-c1-founder\",\n\t\t\"998\": \"hbk-4g-founder\",\n\t\t\"999\": \"as7-d-founder\",\n\t\t\"129\":
+        \"wvr-6rp\",\n\t\t\"130\": \"wvr-6r\",\n\t\t\"131\": \"wvr-6k\",\n\t\t\"132\":
+        \"wvr-7k\"\n\t}\n}"
     http_version: 
-  recorded_at: Mon, 17 Nov 2014 06:10:33 GMT
+  recorded_at: Sun, 18 Jan 2015 14:21:18 GMT
 recorded_with: VCR 2.9.2

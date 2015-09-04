@@ -1,7 +1,7 @@
 class MWO::Client
   ITEMS_PATH     = "/api/items/list/full.json"
-  OMNIPARTS_PATH = "/api/omniparts/list/full.json"
-  MECHS_PATH     = "/api/mechs/list/full.json"
+  OMNIPARTS_PATH = "/api/omniparts/list/full.json" #TODO : kill
+  MECHS_PATH     = "/api/mechs/list/full.json"     #TODO : kill
   MECH_IDS_PATH  = "/api/mechs/list/dict.json"
 
   attr_accessor :host
